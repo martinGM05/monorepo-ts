@@ -1,0 +1,20 @@
+{
+  "name": "monorepo-vite-ts",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:login": "yarn workspace login dev",
+    "build:login": "yarn workspace login build",
+    "dev:admin": "yarn workspace admin dev",
+    "build:admin": "yarn workspace admin build",
+    "dev:enterprise": "yarn workspace enterprise dev",
+    "build:enterprise": "yarn workspace enterprise build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.4.5"
+  }
+}
